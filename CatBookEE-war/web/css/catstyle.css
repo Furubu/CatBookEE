@@ -1,0 +1,39 @@
+//Index page
+
+body {
+    background-color: #EEE;
+}
+
+.logotext {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+
+.divlogo {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-125%, -50%);
+    -webkit-transform:translate(-125%, -50%);
+}
+
+.divrightbg {
+    background-color: #333;
+    position: fixed;
+    left:50%;
+    width:50%;
+    height:100%;
+}
+
+.divformlogin {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(25%, -50%);
+    -webkit-transform:translate(25%, -50%);
+    width: 256px;
+}
+
+label {
+    color:#EEE;
+}
