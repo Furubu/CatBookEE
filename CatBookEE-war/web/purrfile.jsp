@@ -10,7 +10,8 @@
 
         <!-- Custom CSS -->
         <link href="css/purrfile.css" rel="stylesheet" type="text/css" >
-    </head>
+        
+        </head>
 
     <body>
         <jsp:include page="navbar.jsp" >

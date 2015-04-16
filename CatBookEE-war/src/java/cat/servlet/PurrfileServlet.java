@@ -9,6 +9,7 @@ import cat.ejb.UsercbFacade;
 import cat.entity.Postcb;
 import cat.entity.Usercb;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.servlet.RequestDispatcher;
@@ -42,8 +43,8 @@ public class PurrfileServlet extends HttpServlet {
         Usercb user = this.catUser.find(1); // Sustituir 1 por id en sesion
         request.setAttribute("user", user);
 
-        //List<Postcb> postsUser = this.catUser.getPosts(1); // Sustituir 1 por id en sesion
-        //request.setAttribute("posts", postsUser);
+        Collection<Postcb> postsUser = user.getPostcbCollection(); // Sustituir 1 por id en sesion
+        request.setAttribute("posts", postsUser);
 
         RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/purrfile.jsp");
         rd.forward(request, response);

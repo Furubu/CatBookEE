@@ -43,7 +43,7 @@ public class CatLoginServlet extends HttpServlet {
         
         // (SI) Aqui en vez de insertar el email en la sesión, convendría usar una id única.
         session.setAttribute("email", request.getParameter("email"));
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/purrfile.jsp");
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Purrfile");
         dispatcher.forward(request, response);
         
         // (NO)
