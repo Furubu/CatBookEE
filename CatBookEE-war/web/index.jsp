@@ -3,7 +3,7 @@
     //Falta editar. Comprobar si ID (en este caso email temporalmente) está en la sesión. Si es así, salta al perfil del usuario.
     try{
     if(!session.getAttribute("email").equals(null))
-        response.sendRedirect("purrfile.jsp");
+        response.sendRedirect("/Purrfile");
     }catch(Exception e)
     {
     }
