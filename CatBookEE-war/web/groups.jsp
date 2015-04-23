@@ -17,7 +17,7 @@
 
         <!-- Custom CSS -->
         <link href="css/purrfile.css" rel="stylesheet" type="text/css" >
-        
+        <link href="css/catstyle.css" rel="stylesheet" type="text/css" >
         <title> Grupos </title>
     </head>
 
@@ -35,8 +35,8 @@
             <center> <h1> Grupos </h1> </center>
             </br></br>
         </header>
-        <section>
-            <center>
+        <section class="container">
+            <div class="center-block">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -57,7 +57,7 @@
                         %>
                     </tbody>
                 </table>
-            </center>
+            </div>
         </section>
     </body>
 </html>
